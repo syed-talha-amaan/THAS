@@ -1,0 +1,49 @@
+*{
+	box-sizing: border-box;
+}
+#container{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+}
+#clock{
+	min-height: 450px;
+	min-width: 450px;
+	border-radius: 50%;
+	border: 50px solid #eb3223;
+	box-shadow: inset 1px 1px 5px 5px #bcbcbc,-1px 1px 5px 5px #bcbcbc;
+	position: relative;
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+
+}
+.hands{
+	transform-origin: bottom left;  
+}
+#hr{
+	height: 90px;
+	width: 3px;
+	position: absolute;
+	top: 85px;
+	background: #777;
+	transform: rotate(45deg); 
+}
+#min{
+	height: 130px;
+	width: 3px;
+	position: absolute;
+	top: 45px;
+	background: #777;
+	transform: rotate(60deg); 
+}
+#sec{
+	height: 160px;
+	width: 3px;
+	position: absolute;
+	top: 15px;
+	background: #777;
+	transform: rotate(90deg); 
+}
