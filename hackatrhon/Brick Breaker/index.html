@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Css/style.css" />
+    <title>Brick Braker</title>
+  </head>
+  <body>
+    <video src="./Images/procedural_02.mp4" autoplay="on" loop></video>
+    <canvas class="canvas"> </canvas>
+    <div class="result"></div>
+    <div class="main hide">
+      <div class="liveCounter">
+        <img src="./Images/lives_new.png" class="liveIco" alt="" />&nbsp;
+        <span class="lives">3</span>
+      </div>
+      <div class="level">
+        <img src="./Images/level-icon-11.jpg" alt="" /> &nbsp;
+        <span class="levelCount">1</span>
+      </div>
+      <div class="score">
+        <img src="./Images/score-icon-21.jpg" alt="" />&nbsp;
+        <span class="scoreCount">0</span>
+      </div>
+    </div>
+    <div class="bottom">
+      <button class="start">Start</button>
+    </div>
+    <div class="exit">
+      <button class="exitBtn">Exit</button>
+    </div>
+    <div class="pause">
+      <button class="pauseBtn hide">Pause</button>
+    </div>
+    <div class="ttlScore hide">
+      <img src="./Images/score-icon-21.jpg" alt="" />&nbsp;<dic
+        class="ttlScoreCount"
+        >0</dic
+      >
+    </div>
+
+    <div class="audioM">
+      <i class="fas fa-volume unMute"></i>
+      <i class="fas fa-volume-mute mute hide"></i>
+    </div>
+
+    <marquee behavior="" direction="right">Made by Akatsuki Team</marquee>
+    <audio class="brickHit" src="./Audio/brickBreak.wav"></audio>
+    <audio class="paddleHit" src="./Audio/ballBounce.wav"></audio>
+    <audio class="win" src="./Audio/win.mp3"></audio>
+    <audio class="lost" src="./Audio/Lost.wav"></audio>
+    <audio class="mainAd play" src="./Audio/MainM.mp3" autoplay loop></audio>
+  </body>
+  <script src="./script.js"></script>
+</html>
